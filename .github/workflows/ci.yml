@@ -157,6 +157,6 @@ jobs:
         uses: changesets/action@e0145edc7d9d8679003495b11f87bd8ef63c0cba # v1
         with:
           publish: pnpm changeset tag
-          version: pnpm changeset version && pnpm install --frozen-lockfile=false
+          version: pnpm run version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
