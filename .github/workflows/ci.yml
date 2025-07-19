@@ -121,6 +121,7 @@ jobs:
 
   changesets:
     name: 🔮 Changesets
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.title != 'Version Packages' }}
     timeout-minutes: 1
     runs-on: ubuntu-latest
     steps:
