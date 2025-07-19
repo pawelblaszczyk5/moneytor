@@ -27,9 +27,9 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"devDependencies": {
-		"commonality": "catalog:",
 		"@moneytor/eslint-config": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
+		"commonality": "catalog:",
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {
