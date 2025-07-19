@@ -131,4 +131,4 @@ jobs:
         uses: ./.github/composite-actions/setup
 
       - name: Check changeset
-        run: changeset status --since=main
+        run: pnpm changeset status --since=main
