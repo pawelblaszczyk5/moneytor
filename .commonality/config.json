@@ -6,7 +6,6 @@
 			"recommended/has-codeowner",
 			"recommended/valid-package-name",
 			"recommended/unique-dependency-types",
-			"recommended/matching-dev-peer-versions",
 			"recommended/extends-repository-field",
 			"@moneytor/commonality/has-description-field",
 			"@moneytor/commonality/has-proper-readme-heading",
