@@ -1,0 +1,40 @@
+{
+	"name": "@moneytor/web",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Basic experimental template",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
+		"directory": "apps/web"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"imports": {
+		"#src/*": "./src/*"
+	},
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"preview": "vite preview",
+		"typecheck": "tsc --build --noEmit"
+	},
+	"dependencies": {
+		"@vitejs/plugin-rsc": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:"
+	},
+	"devDependencies": {
+		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/typescript-config": "workspace:0.0.1",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"@vitejs/plugin-react": "catalog:",
+		"babel-plugin-react-compiler": "catalog:",
+		"vite": "catalog:",
+		"vite-plugin-inspect": "catalog:"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"$schema": "https://commonality.co/config.json",
+	"checks": {
+		"*": [
+			"recommended/has-readme",
+			"recommended/has-codeowner",
+			"recommended/valid-package-name",
+			"recommended/unique-dependency-types",
+			"recommended/matching-dev-peer-versions",
+			"recommended/extends-repository-field",
+			"@moneytor/commonality/has-description-field",
+			"@moneytor/commonality/has-proper-readme-heading",
+			"@moneytor/commonality/use-catalog-protocol",
+			"@moneytor/commonality/use-exact-workspace-version"
+		],
+		"library": ["@moneytor/commonality/is-marked-as-side-effects-free", "@moneytor/commonality/is-private-package"]
+	},
+	"constraints": { "*": { "disallow": ["application"] } }
+}

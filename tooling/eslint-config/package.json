@@ -1,0 +1,55 @@
+{
+	"name": "@moneytor/eslint-config",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Shared ESLint config",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
+		"directory": "tooling/eslint-config"
+	},
+	"type": "module",
+	"exports": {
+		"./core": {
+			"import": "./core.js"
+		},
+		"./lingui": {
+			"import": "./lingui.js"
+		},
+		"./node": {
+			"import": "./node.js"
+		},
+		"./react": {
+			"import": "./react.js"
+		}
+	},
+	"dependencies": {
+		"@eslint/eslintrc": "^3.3.1",
+		"@eslint/js": "^9.31.0",
+		"@stylistic/eslint-plugin": "^5.2.0",
+		"eslint": "^9.31.0",
+		"eslint-config-flat-gitignore": "^2.1.0",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-canonical": "^5.1.3",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-fp": "^2.3.0",
+		"eslint-plugin-import-x": "^4.16.1",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-lingui": "^0.10.1",
+		"eslint-plugin-n": "^17.21.0",
+		"eslint-plugin-no-secrets": "^2.2.1",
+		"eslint-plugin-perfectionist": "^4.15.0",
+		"eslint-plugin-prefer-arrow-functions": "^3.6.2",
+		"eslint-plugin-promise": "^7.2.1",
+		"eslint-plugin-react-dom": "^1.52.3",
+		"eslint-plugin-react-hooks": "6.0.0",
+		"eslint-plugin-react-hooks-extra": "^1.52.3",
+		"eslint-plugin-react-naming-convention": "^1.52.3",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"eslint-plugin-react-web-api": "^1.52.3",
+		"eslint-plugin-react-x": "^1.52.3",
+		"eslint-plugin-regexp": "^2.9.0",
+		"eslint-plugin-unicorn": "^59.0.1",
+		"typescript-eslint": "8.37.0"
+	}
+}

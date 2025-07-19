@@ -1,0 +1,47 @@
+{
+	"name": "@moneytor/root",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "turbo run build",
+		"ci": "turbo run build lint typecheck sort-package-json spellcheck format commonality:check commonality:constrain --continue && turbo boundaries",
+		"ci:fix": "turbo run lint:fix sort-package-json:fix format:fix --continue",
+		"commonality:check": "commonality check",
+		"commonality:constrain": "commonality constrain",
+		"commonality:studio": "commonality studio",
+		"predev": "turbo run build --filter=\"./{packages,tooling}/*\"",
+		"dev": "turbo watch dev --experimental-write-cache",
+		"format": "prettier \".\" --check",
+		"format:fix": "prettier \".\" --write",
+		"lint": "turbo run lint",
+		"lint:fix": "turbo run lint:fix",
+		"prepreview": "turbo run build",
+		"preview": "turbo run preview",
+		"sort-package-json": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\" --check",
+		"sort-package-json:fix": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\"",
+		"spellcheck": "cspell \"**\" --no-progress --show-context --show-suggestions",
+		"typecheck": "turbo run typecheck",
+		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
+	},
+	"devDependencies": {
+		"@cspell/dict-pl_pl": "^3.0.6",
+		"@moneytor/commonality": "workspace:0.0.1",
+		"commonality": "catalog:",
+		"commonality-checks-recommended": "catalog:",
+		"cspell": "^9.2.0",
+		"prettier": "^3.6.2",
+		"sort-package-json": "^3.4.0",
+		"taze": "^19.1.0",
+		"turbo": "2.5.5",
+		"typescript": "catalog:"
+	},
+	"packageManager": "pnpm@10.13.1",
+	"engines": {
+		"node": "24.3.0",
+		"pnpm": "10.13.1"
+	}
+}
