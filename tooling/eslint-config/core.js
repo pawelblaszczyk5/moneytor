@@ -82,7 +82,7 @@ export default tseslint.config(
 			"no-restricted-syntax": [
 				"error",
 				{
-					message: "Use #private instead",
+					message: "Use #private instead of TS accessibility modifier",
 					selector: ':matches(PropertyDefinition, MethodDefinition)[accessibility="private"]',
 				},
 				...banExtension("ts"),
