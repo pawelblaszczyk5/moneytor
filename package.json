@@ -25,7 +25,8 @@
 		"sort-package-json:fix": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\"",
 		"spellcheck": "cspell \"**\" --no-progress --show-context --show-suggestions",
 		"typecheck": "turbo run typecheck",
-		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
+		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force",
+		"version": "pnpm changeset version && pnpm install --frozen-lockfile=false"
 	},
 	"devDependencies": {
 		"@changesets/changelog-git": "^0.2.1",
