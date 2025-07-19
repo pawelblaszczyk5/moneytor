@@ -28,6 +28,8 @@
 		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
 	},
 	"devDependencies": {
+		"@changesets/changelog-git": "^0.2.1",
+		"@changesets/cli": "^2.29.5",
 		"@cspell/dict-pl_pl": "^3.0.6",
 		"@moneytor/commonality": "workspace:0.0.1",
 		"commonality": "catalog:",
