@@ -155,5 +155,7 @@ jobs:
 
       - name: Create Release Pull Request
         uses: changesets/action@e0145edc7d9d8679003495b11f87bd8ef63c0cba # v1
+        with:
+          publish: echo "Releasing new version"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
