@@ -1,4 +1,4 @@
-const App = () => <h1>Hello world!! 💚</h1>;
+const App = () => <h1>Hello world 🌍</h1>;
 
 export const Root = () => (
 	<html lang="en">
