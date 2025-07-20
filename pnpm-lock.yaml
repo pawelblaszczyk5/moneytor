@@ -102,7 +102,7 @@ importers:
         version: 0.0.0-experimental-dffacc7b-20250717(react@0.0.0-experimental-dffacc7b-20250717)
     devDependencies:
       '@moneytor/eslint-config':
-        specifier: workspace:0.0.1
+        specifier: workspace:*
         version: link:../../tooling/eslint-config
       '@moneytor/typescript-config':
         specifier: workspace:*
