@@ -25,14 +25,11 @@
 		"sort-package-json:fix": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\"",
 		"spellcheck": "cspell \"**\" --no-progress --show-context --show-suggestions",
 		"typecheck": "turbo run typecheck",
-		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force",
-		"version": "pnpm changeset version && pnpm install --frozen-lockfile=false"
+		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
 	},
 	"devDependencies": {
-		"@changesets/changelog-git": "^0.2.1",
-		"@changesets/cli": "^2.29.5",
 		"@cspell/dict-pl_pl": "^3.0.6",
-		"@moneytor/commonality": "workspace:0.0.1",
+		"@moneytor/commonality": "workspace:*",
 		"commonality": "catalog:",
 		"commonality-checks-recommended": "catalog:",
 		"cspell": "^9.2.0",

@@ -1,6 +1,5 @@
 {
 	"name": "@moneytor/commonality",
-	"version": "0.0.1",
 	"private": true,
 	"description": "Commonality checks package",
 	"repository": {
@@ -17,8 +16,9 @@
 		"./has-proper-readme-heading": "./dist/src/has-proper-readme-heading.js",
 		"./is-marked-as-side-effects-free": "./dist/src/is-marked-as-side-effects-free.js",
 		"./is-private-package": "./dist/src/is-private-package.js",
+		"./not-use-version-field": "./dist/src/not-use-version-field.js",
 		"./use-catalog-protocol": "./dist/src/use-catalog-protocol.js",
-		"./use-exact-workspace-version": "./dist/src/use-exact-workspace-version.js"
+		"./use-free-workspace-version": "./dist/src/use-free-workspace-version.js"
 	},
 	"scripts": {
 		"build": "tsc --noCheck",
@@ -27,8 +27,8 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:0.0.2",
-		"@moneytor/typescript-config": "workspace:0.0.1",
+		"@moneytor/eslint-config": "workspace:*",
+		"@moneytor/typescript-config": "workspace:*",
 		"commonality": "catalog:",
 		"typescript": "catalog:"
 	},

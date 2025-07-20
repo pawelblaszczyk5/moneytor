@@ -9,8 +9,9 @@
 			"recommended/extends-repository-field",
 			"@moneytor/commonality/has-description-field",
 			"@moneytor/commonality/has-proper-readme-heading",
+			"@moneytor/commonality/not-use-version-field",
 			"@moneytor/commonality/use-catalog-protocol",
-			"@moneytor/commonality/use-exact-workspace-version"
+			"@moneytor/commonality/use-free-workspace-version"
 		],
 		"library": ["@moneytor/commonality/is-marked-as-side-effects-free", "@moneytor/commonality/is-private-package"]
 	},
