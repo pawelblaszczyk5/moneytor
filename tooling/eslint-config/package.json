@@ -1,6 +1,5 @@
 {
 	"name": "@moneytor/eslint-config",
-	"version": "0.0.2",
 	"private": true,
 	"description": "Shared ESLint config",
 	"repository": {

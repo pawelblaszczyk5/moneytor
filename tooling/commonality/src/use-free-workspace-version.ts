@@ -4,7 +4,7 @@ import { json } from "commonality";
 
 export default {
 	level: "error",
-	message: "Workspace dependencies must use exact version",
+	message: "Workspace dependencies mustn't use specific version",
 	validate: async (context) => {
 		const currentWorkspace = await json<PackageJson>(context.package.path, "package.json").get();
 
@@ -15,21 +15,20 @@ export default {
 		const workspaceDependenciesWithoutExactVersion = Object.entries({
 			...currentWorkspace.dependencies,
 			...currentWorkspace.devDependencies,
+			...currentWorkspace.peerDependencies,
 		})
 			.filter(([name, version]) => {
 				if (!name.startsWith("@moneytor/")) {
 					return false;
 				}
 
-				const maybeMajorVersionNumber = Number(version.at("workspace:*".length - 1));
-
-				return Number.isNaN(maybeMajorVersionNumber);
+				return version !== "workspace:*";
 			})
 			.map(([name]) => name);
 
 		if (workspaceDependenciesWithoutExactVersion.length > 0) {
 			return {
-				message: `These workspace dependencies, should use exact "workspace:" protocol versioning: ${workspaceDependenciesWithoutExactVersion.join(", ")}`,
+				message: `These workspace dependencies, must use free "workspace:*" protocol versioning: ${workspaceDependenciesWithoutExactVersion.join(", ")}`,
 				path: "package.json",
 			};
 		}
