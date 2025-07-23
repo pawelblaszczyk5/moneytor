@@ -48,7 +48,10 @@ export default async function handler(request: Request): Promise<Response> {
 		}
 	}
 
-	const rscStream = renderToReadableStream<RscPayload>({ formState, returnValue, root: <Root /> });
+	const rscStream = renderToReadableStream<RscPayload>(
+		{ formState, returnValue, root: <Root /> },
+		{ temporaryReferences },
+	);
 
 	const isRscRequest = !request.headers.get("accept")?.includes("text/html");
 
