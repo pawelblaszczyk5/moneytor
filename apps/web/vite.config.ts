@@ -32,4 +32,5 @@ export default defineConfig({
 		disableReactCompilerInSsrContext(),
 		inspect(),
 	],
+	server: { port: 4_200 },
 });
