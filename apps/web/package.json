@@ -1,6 +1,6 @@
 {
 	"name": "@moneytor/web",
-	"description": "Basic experimental template",
+	"description": "Web app",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pawelblaszczyk5/moneytor",
@@ -32,6 +32,7 @@
 		"@types/react-dom": "catalog:",
 		"@vitejs/plugin-react": "catalog:",
 		"babel-plugin-react-compiler": "catalog:",
+		"eslint": "catalog:",
 		"vite": "catalog:",
 		"vite-plugin-inspect": "catalog:"
 	}

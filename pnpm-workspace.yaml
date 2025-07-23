@@ -8,6 +8,7 @@ allowUnusedPatches: false
 
 catalog:
   "@types/node": ^24.0.15
+  eslint: ^9.31.0
   babel-plugin-react-compiler: 19.1.0-rc.2
   typescript: ^5.8.3
   vite: ^7.0.5
@@ -29,3 +30,11 @@ onlyBuiltDependencies:
 overrides:
   eslint-import-resolver-typescript>eslint-plugin-import: "-"
   vite: "npm:rolldown-vite@latest"
+
+engineStrict: true
+packageManagerStrictVersion: true
+saveWorkspaceProtocol: true
+linkWorkspacePackages: true
+managePackageManagerVersions: false
+verifyDepsBeforeRun: "error"
+strictDepBuilds: true
