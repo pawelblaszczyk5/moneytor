@@ -1,0 +1,1 @@
+{ "extends": "@moneytor/typescript-config/dom-no-build", "include": ["src", "src/.vitepress/**/*"] }

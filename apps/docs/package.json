@@ -1,0 +1,26 @@
+{
+	"name": "@moneytor/docs",
+	"description": "Documentation",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
+		"directory": "apps/docs"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"build": "vitepress build src",
+		"dev": "vitepress dev src",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"preview": "vitepress preview src",
+		"typecheck": "tsc --build --noEmit"
+	},
+	"devDependencies": {
+		"@moneytor/eslint-config": "workspace:*",
+		"@moneytor/typescript-config": "workspace:*",
+		"eslint": "catalog:",
+		"oxc-minify": "^0.75.1",
+		"vitepress": "2.0.0-alpha.8"
+	}
+}
