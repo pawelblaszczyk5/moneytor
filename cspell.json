@@ -7,5 +7,5 @@
 	"useGitignore": true,
 	"words": ["codeowner", "lingui", "moneytor", "rolldown", "stylex", "stylexjs", "typecheck", "vite", "vitejs"],
 	"enableGlobDot": true,
-	"ignoreWords": ["commonality", "commonalityco", "pawelblaszczyk", "predev", "taze", "tseslint"]
+	"ignoreWords": ["pawelblaszczyk", "predev", "taze", "tseslint"]
 }

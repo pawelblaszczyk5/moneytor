@@ -9,8 +9,6 @@ allowUnusedPatches: false
 catalog:
   "@types/node": ^24.0.15
   babel-plugin-react-compiler: 19.1.0-rc.2
-  commonality: ^0.2.63
-  commonality-checks-recommended: ^0.0.40
   typescript: ^5.8.3
   vite: ^7.0.5
   vite-plugin-inspect: ^11.3.0
@@ -29,12 +27,5 @@ onlyBuiltDependencies:
   - unrs-resolver
 
 overrides:
-  "@commonalityco/studio>@xyflow/react": "-"
-  "@commonalityco/studio>@xyflow/system": "-"
-  "@commonalityco/studio>framer-motion": "-"
-  "@commonalityco/studio>jotai": "-"
-  "@commonalityco/studio>lz-string": "-"
-  "@commonalityco/studio>nuqs": "-"
-  "@commonalityco/studio>socket.io-client": "-"
   eslint-import-resolver-typescript>eslint-plugin-import: "-"
   vite: "npm:rolldown-vite@latest"
