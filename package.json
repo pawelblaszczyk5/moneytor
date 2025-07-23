@@ -8,11 +8,8 @@
 	"type": "module",
 	"scripts": {
 		"build": "turbo run build",
-		"ci": "turbo run build lint typecheck sort-package-json spellcheck format commonality:check commonality:constrain --continue && turbo boundaries",
+		"ci": "turbo run build lint typecheck sort-package-json spellcheck format --continue && turbo boundaries",
 		"ci:fix": "turbo run lint:fix sort-package-json:fix format:fix --continue",
-		"commonality:check": "commonality check",
-		"commonality:constrain": "commonality constrain",
-		"commonality:studio": "commonality studio",
 		"predev": "turbo run build --filter=\"./{packages,tooling}/*\"",
 		"dev": "turbo watch dev --experimental-write-cache",
 		"format": "prettier \".\" --check",
@@ -29,9 +26,6 @@
 	},
 	"devDependencies": {
 		"@cspell/dict-pl_pl": "^3.0.6",
-		"@moneytor/commonality": "workspace:*",
-		"commonality": "catalog:",
-		"commonality-checks-recommended": "catalog:",
 		"cspell": "^9.2.0",
 		"prettier": "^3.6.2",
 		"sort-package-json": "^3.4.0",

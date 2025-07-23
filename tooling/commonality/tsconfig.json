@@ -1,1 +1,0 @@
-{ "extends": "@moneytor/typescript-config/node-build", "include": ["src"] }

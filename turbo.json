@@ -13,8 +13,6 @@
 		"//#format:fix": { "dependsOn": [], "cache": false },
 		"//#sort-package-json": { "inputs": ["**/package.json"], "dependsOn": [] },
 		"//#sort-package-json:fix": { "dependsOn": [], "cache": false },
-		"//#spellcheck": { "dependsOn": [] },
-		"//#commonality:check": { "dependsOn": ["^build"] },
-		"//#commonality:constrain": { "dependsOn": [] }
+		"//#spellcheck": { "dependsOn": [] }
 	}
 }
