@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: General
-      link: /general/intro
+      link: /general/whats-moneytor
     - theme: alt
-      text: ADR
-      link: /adr
+      text: Development
+      link: /development/intro
 
 features:
   - icon: 📈
