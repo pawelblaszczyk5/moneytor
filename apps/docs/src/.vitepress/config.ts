@@ -1,3 +1,5 @@
+// cspell:words timescaledb
+
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
@@ -9,10 +11,39 @@ export default defineConfig({
 	themeConfig: {
 		nav: [
 			{ link: "/", text: "Home" },
-			{ link: "/example", text: "Docs" },
+			{ activeMatch: "general", link: "/general/whats-moneytor", text: "General" },
+			{ activeMatch: "development", link: "/development/intro", text: "Development" },
 		],
+		outline: "deep",
 		search: { provider: "local" },
-		sidebar: [{ items: [{ link: "/example", text: "Example" }], text: "Pages" }],
+		sidebar: [
+			{
+				collapsed: false,
+				items: [
+					{ link: "/general/whats-moneytor", text: "What's Moneytor?" },
+					{ link: "/general/features", text: "Features" },
+				],
+				text: "General",
+			},
+			{
+				collapsed: false,
+				items: [
+					{ link: "/development/intro", text: "Intro" },
+					{
+						collapsed: false,
+						items: [
+							{ link: "/development/adr/001-database", text: "1. Database" },
+							{ link: "/development/adr/002-frontend-framework", text: "2. Frontend framework" },
+							{ link: "/development/adr/003-backend-architecture", text: "3. Backend architecture" },
+						],
+						link: "/development/adr",
+						text: "ADR",
+					},
+					{ link: "/development/useful-commands", text: "Useful commands" },
+				],
+				text: "Development",
+			},
+		],
 		socialLinks: [{ icon: "github", link: "https://github.com/pawelblaszczyk5/moneytor" }],
 	},
 	title: "Moneytor",
