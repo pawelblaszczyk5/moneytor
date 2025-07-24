@@ -4,17 +4,23 @@ layout: home
 hero:
   name: "Moneytor"
   text: "Project documentation"
-  tagline: My great project tagline
+  tagline: Finance tracking for tomorrow day!
   actions:
     - theme: brand
-      text: Example page
-      link: /example
+      text: General
+      link: /general/intro
+    - theme: alt
+      text: ADR
+      link: /adr
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 📈
+    title: Observability for your finances
+    details: Track how your finances check over-time and make yourself accountable with budget planning features
+  - icon: ✨
+    title: AI empowered
+    details: Tracking every receipt is tedious? Use AI for this! Get insights into how your budget is looking and changing over time
+  - icon: 🤝
+    title: Multi-tenant, collaborative experience
+    details: Easily use it with your friends, S/O or colleagues with completely separate experience
 ---
