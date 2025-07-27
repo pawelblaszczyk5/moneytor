@@ -19,8 +19,8 @@ catalogs:
       specifier: ^4.7.0
       version: 4.7.0
     '@vitejs/plugin-rsc':
-      specifier: https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@968db53
-      version: 0.4.12
+      specifier: https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7
+      version: 0.4.13
     babel-plugin-react-compiler:
       specifier: 19.1.0-rc.2
       version: 19.1.0-rc.2
@@ -28,11 +28,11 @@ catalogs:
       specifier: ^9.32.0
       version: 9.32.0
     react:
-      specifier: 0.0.0-experimental-dffacc7b-20250717
-      version: 0.0.0-experimental-dffacc7b-20250717
+      specifier: 0.0.0-experimental-19baee81-20250725
+      version: 0.0.0-experimental-19baee81-20250725
     react-dom:
-      specifier: 0.0.0-experimental-dffacc7b-20250717
-      version: 0.0.0-experimental-dffacc7b-20250717
+      specifier: 0.0.0-experimental-19baee81-20250725
+      version: 0.0.0-experimental-19baee81-20250725
     typescript:
       specifier: ^5.8.3
       version: 5.8.3
@@ -92,13 +92,13 @@ importers:
     dependencies:
       '@vitejs/plugin-rsc':
         specifier: 'catalog:'
-        version: '@vitejs/plugin-rsc-experimental@https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@968db53(react-dom@0.0.0-experimental-dffacc7b-20250717(react@0.0.0-experimental-dffacc7b-20250717))(react@0.0.0-experimental-dffacc7b-20250717)(rolldown-vite@7.0.10(@types/node@24.1.0)(jiti@2.4.2)(yaml@2.8.0))'
+        version: '@vitejs/plugin-rsc-experimental@https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7(react-dom@0.0.0-experimental-19baee81-20250725(react@0.0.0-experimental-19baee81-20250725))(react@0.0.0-experimental-19baee81-20250725)(rolldown-vite@7.0.10(@types/node@24.1.0)(jiti@2.4.2)(yaml@2.8.0))'
       react:
         specifier: 'catalog:'
-        version: 0.0.0-experimental-dffacc7b-20250717
+        version: 0.0.0-experimental-19baee81-20250725
       react-dom:
         specifier: 'catalog:'
-        version: 0.0.0-experimental-dffacc7b-20250717(react@0.0.0-experimental-dffacc7b-20250717)
+        version: 0.0.0-experimental-19baee81-20250725(react@0.0.0-experimental-19baee81-20250725)
     devDependencies:
       '@moneytor/eslint-config':
         specifier: workspace:*
@@ -1315,9 +1315,9 @@ packages:
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
 
-  '@vitejs/plugin-rsc-experimental@https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@968db53':
-    resolution: {tarball: https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@968db53}
-    version: 0.4.12
+  '@vitejs/plugin-rsc-experimental@https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7':
+    resolution: {tarball: https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7}
+    version: 0.4.13
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -3020,17 +3020,17 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-dom@0.0.0-experimental-dffacc7b-20250717:
-    resolution: {integrity: sha512-yfd27AKCkUv7Qrary/r4Kd68WH5v7B2t7dEsqL2fPAVpVBFgT9qdVd2MopQ58FL5XFNn1EJ5Yp+of0OHLeeonw==}
+  react-dom@0.0.0-experimental-19baee81-20250725:
+    resolution: {integrity: sha512-EQPmbE9e7cb3EIQDbFPQ2Iw32SIAb6hmHbz6L9SAKMn8HA5vDyhbgfPgPPMKrzwbWkaiYrwBr0SjQzABrVSkPw==}
     peerDependencies:
-      react: 0.0.0-experimental-dffacc7b-20250717
+      react: 0.0.0-experimental-19baee81-20250725
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react@0.0.0-experimental-dffacc7b-20250717:
-    resolution: {integrity: sha512-SfPbCRCOtLepTPzIt1ta95xZPORXQjXq99TT4tB+ekTgZxJM/1PZQzswK0HZTlwz2N4RUlDSIYuut9R3BlgHKQ==}
+  react@0.0.0-experimental-19baee81-20250725:
+    resolution: {integrity: sha512-RQ+gon4KiEkTIyOyYeJ2g62UFj6nFNu2shh8nupRI5FXvLyaZhSuuSbHYOwk3YDJQ3cxDxCPaCYWG77G5+Af9g==}
     engines: {node: '>=0.10.0'}
 
   recast@0.23.11:
@@ -3171,8 +3171,8 @@ packages:
     resolution: {integrity: sha512-b3rppTKm9T+PsVCBEOUR46GWI7fdOs00VKZ1+9c1EWDaDMvjQc6tUwuFyIprgGgTcWoVHSKrU8H31ZHA2e0RHA==}
     engines: {node: '>=10'}
 
-  scheduler@0.0.0-experimental-dffacc7b-20250717:
-    resolution: {integrity: sha512-gPzNGctg2RQCQeYKmUGuZCKdP5IpsTO+Dh+brZcSwOd9fU0HdOVTd7anE7FWFyceajWMksB6ybm3WOY0bQuJyQ==}
+  scheduler@0.0.0-experimental-19baee81-20250725:
+    resolution: {integrity: sha512-XQeExbFQ3VCw4PV/OV7mA9EuYVNB6KvzqrIb17mXp5UjlQFRuUEcUDv7YDdiLc6yVf6VQc+aFBWvd2bXLBiDDw==}
 
   scslre@0.3.0:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
@@ -4836,15 +4836,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-rsc-experimental@https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@968db53(react-dom@0.0.0-experimental-dffacc7b-20250717(react@0.0.0-experimental-dffacc7b-20250717))(react@0.0.0-experimental-dffacc7b-20250717)(rolldown-vite@7.0.10(@types/node@24.1.0)(jiti@2.4.2)(yaml@2.8.0))':
+  '@vitejs/plugin-rsc-experimental@https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7(react-dom@0.0.0-experimental-19baee81-20250725(react@0.0.0-experimental-19baee81-20250725))(react@0.0.0-experimental-19baee81-20250725)(rolldown-vite@7.0.10(@types/node@24.1.0)(jiti@2.4.2)(yaml@2.8.0))':
     dependencies:
       '@mjackson/node-fetch-server': 0.7.0
       es-module-lexer: 1.7.0
       estree-walker: 3.0.3
       magic-string: 0.30.17
       periscopic: 4.0.2
-      react: 0.0.0-experimental-dffacc7b-20250717
-      react-dom: 0.0.0-experimental-dffacc7b-20250717(react@0.0.0-experimental-dffacc7b-20250717)
+      react: 0.0.0-experimental-19baee81-20250725
+      react-dom: 0.0.0-experimental-19baee81-20250725(react@0.0.0-experimental-19baee81-20250725)
       turbo-stream: 3.1.0
       vite: rolldown-vite@7.0.10(@types/node@24.1.0)(jiti@2.4.2)(yaml@2.8.0)
       vitefu: 1.1.1(rolldown-vite@7.0.10(@types/node@24.1.0)(jiti@2.4.2)(yaml@2.8.0))
@@ -6918,14 +6918,14 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@0.0.0-experimental-dffacc7b-20250717(react@0.0.0-experimental-dffacc7b-20250717):
+  react-dom@0.0.0-experimental-19baee81-20250725(react@0.0.0-experimental-19baee81-20250725):
     dependencies:
-      react: 0.0.0-experimental-dffacc7b-20250717
-      scheduler: 0.0.0-experimental-dffacc7b-20250717
+      react: 0.0.0-experimental-19baee81-20250725
+      scheduler: 0.0.0-experimental-19baee81-20250725
 
   react-refresh@0.17.0: {}
 
-  react@0.0.0-experimental-dffacc7b-20250717: {}
+  react@0.0.0-experimental-19baee81-20250725: {}
 
   recast@0.23.11:
     dependencies:
@@ -7068,7 +7068,7 @@ snapshots:
 
   safe-stable-stringify@2.5.0: {}
 
-  scheduler@0.0.0-experimental-dffacc7b-20250717: {}
+  scheduler@0.0.0-experimental-19baee81-20250725: {}
 
   scslre@0.3.0:
     dependencies:
