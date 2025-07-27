@@ -1,9 +1,9 @@
 import type { ReactFormState } from "react-dom/client";
 
-import { injectRscStreamToHtml } from "@vitejs/plugin-rsc/rsc-html-stream/ssr";
 import { createFromReadableStream } from "@vitejs/plugin-rsc/ssr";
 import { use } from "react";
 import { renderToReadableStream } from "react-dom/server.edge";
+import { injectRSCPayload } from "rsc-html-stream/server";
 
 import type { RscPayload } from "#src/framework/entry.rsc.js";
 
@@ -33,7 +33,7 @@ export const renderHTML = async (
 	});
 
 	const responseStream = htmlStream.pipeThrough(
-		injectRscStreamToHtml(rscStream2, { ...(options.nonce ? { nonce: options.nonce } : {}) }),
+		injectRSCPayload(rscStream2, { ...(options.nonce ? { nonce: options.nonce } : {}) }),
 	);
 
 	return responseStream;

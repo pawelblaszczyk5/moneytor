@@ -19,9 +19,9 @@ catalog:
   "@stylexjs/babel-plugin": ^0.14.3
   "@stylexjs/postcss-plugin": ^0.14.3
   "@stylexjs/stylex": ^0.14.3
-  react: 0.0.0-experimental-dffacc7b-20250717
-  react-dom: 0.0.0-experimental-dffacc7b-20250717
-  "@vitejs/plugin-rsc": https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@968db53
+  react: 0.0.0-experimental-19baee81-20250725
+  react-dom: 0.0.0-experimental-19baee81-20250725
+  "@vitejs/plugin-rsc": https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7
 
 onlyBuiltDependencies:
   - esbuild
