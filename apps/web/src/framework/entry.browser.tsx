@@ -5,9 +5,9 @@ import {
 	encodeReply,
 	setServerCallback,
 } from "@vitejs/plugin-rsc/browser";
-import { getRscStreamFromHtml } from "@vitejs/plugin-rsc/rsc-html-stream/browser";
 import { startTransition, StrictMode, useEffect, useState } from "react";
 import { hydrateRoot } from "react-dom/client";
+import { rscStream } from "rsc-html-stream/client";
 
 import type { RscPayload } from "#src/framework/entry.rsc.js";
 
@@ -71,7 +71,7 @@ function listenNavigation(onNavigation: () => void) {
 const main = async () => {
 	let setPayload: (value: RscPayload) => void;
 
-	const initialPayload = await createFromReadableStream<RscPayload>(getRscStreamFromHtml());
+	const initialPayload = await createFromReadableStream<RscPayload>(rscStream as ReadableStream<Uint8Array>);
 
 	const fetchRscPayload = async () => {
 		const payload = await createFromFetch<RscPayload>(fetch(globalThis.location.href));
