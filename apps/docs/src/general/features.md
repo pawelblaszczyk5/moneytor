@@ -15,7 +15,7 @@ Non-comprehensive list of important, user-facing features that are currently pla
 ## Browse your history
 
 - Predefined dashboards
-- Querying
+- Querying, advanced filters based on your data schema
 - Custom dashboards <Badge type="tip" text="Post v1" />
 - AI insights <Badge type="tip" text="Post v1" />
 - Digest emails <Badge type="tip" text="Post v1" />
