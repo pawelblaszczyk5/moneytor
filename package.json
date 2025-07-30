@@ -1,6 +1,5 @@
 {
 	"name": "@moneytor/root",
-	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pawelblaszczyk5/moneytor"
