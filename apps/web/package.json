@@ -1,11 +1,6 @@
 {
 	"name": "@moneytor/web",
 	"description": "Web app",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/pawelblaszczyk5/moneytor",
-		"directory": "apps/web"
-	},
 	"sideEffects": false,
 	"type": "module",
 	"imports": {

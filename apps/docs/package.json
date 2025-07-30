@@ -1,11 +1,6 @@
 {
 	"name": "@moneytor/docs",
 	"description": "Documentation",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/pawelblaszczyk5/moneytor",
-		"directory": "apps/docs"
-	},
 	"sideEffects": false,
 	"type": "module",
 	"scripts": {
