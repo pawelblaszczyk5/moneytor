@@ -18,6 +18,10 @@ The new kid on the block - `TanStack Start` is a really interesting case. I've b
 
 However, recently one thing that's popping out is low-level integration with RSCs like `Parcel` or `Vite` ones. They enable a lot of stuff and powerful usages, while obviously requiring higher buy-in and effort.
 
+<!-- cspell:ignore replicache -->
+
+One important concern - is RSC an optimal solution here? I'm not sure, that app could be potentially better by using something highly client-side heavy, like Replicache, TanStack DB, Zero, Jazz Tools etc. That's what I initially considered. However as noted in preface, I just like RSCs. I enjoy using them, I enjoy learning about them. It's all about enjoying it 😄
+
 ## Decision
 
 Use `@vitejs/plugin-rsc` to basically build custom RSC framework. Start with really low-level and not fully optimal solution while building app. If it has at least some success and it outgrows the super basic API - improve it. Also since RSCs are really portable across frameworks - migrating to `React Router` when RSCs got more stable over there is always an option.
