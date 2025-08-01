@@ -12,16 +12,16 @@ catalog:
   babel-plugin-react-compiler: 19.1.0-rc.2
   typescript: ^5.8.3
   vite: ^7.0.6
-  vite-plugin-inspect: ^11.3.0
+  vite-plugin-inspect: ^11.3.2
   "@vitejs/plugin-react": ^4.7.0
-  "@types/react": ^19.1.8
-  "@types/react-dom": ^19.1.6
-  "@stylexjs/babel-plugin": ^0.14.3
-  "@stylexjs/postcss-plugin": ^0.14.3
-  "@stylexjs/stylex": ^0.14.3
-  react: 0.0.0-experimental-19baee81-20250725
-  react-dom: 0.0.0-experimental-19baee81-20250725
-  "@vitejs/plugin-rsc": https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@dbe0ce7
+  "@types/react": ^19.1.9
+  "@types/react-dom": ^19.1.7
+  "@stylexjs/babel-plugin": ^0.15.1
+  "@stylexjs/postcss-plugin": ^0.15.1
+  "@stylexjs/stylex": ^0.15.1
+  react: 0.0.0-experimental-c260b38d-20250731
+  react-dom: 0.0.0-experimental-c260b38d-20250731
+  "@vitejs/plugin-rsc": https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@48b7f77
 
 onlyBuiltDependencies:
   - esbuild
