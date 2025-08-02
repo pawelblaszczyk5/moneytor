@@ -14,6 +14,8 @@ This app will have some specific needs in terms of the backend. I'll want to imp
 
 Moreover, the `Cluster` enables a lot of interesting patterns for multi-tenant applications, especially when it comes to highly data driven apps. Statefullness is something that's really powerful and a bit lost treasure in modern times.
 
+On the other hand, it may sound like an overkill a bit - but one of my main ideas for this project is also learning and trying new things. I think I'd never have a way of trying it otherwise while it sounds super cool. I'm deeply interested in doing more "hardcore" backend development.
+
 ## Decision
 
 Use `Cluster` and `Workflow` to build the backend layer. Meanwhile treat frontend as a separate app, not as a dumb frontend as some people do.
