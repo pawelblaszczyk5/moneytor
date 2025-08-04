@@ -1,4 +1,10 @@
-const App = () => <h1>Hello world 🌍</h1>;
+import stylex from "@moneytor/stylex";
+
+import "#src/root.css";
+
+const styles = stylex.create({ test: { color: "green" } });
+
+const App = () => <h1 {...stylex.props(styles.test)}>Hello world 🌍</h1>;
 
 export const Root = () => (
 	<html lang="en">

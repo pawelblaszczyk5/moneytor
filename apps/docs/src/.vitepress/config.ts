@@ -48,5 +48,5 @@ export default defineConfig({
 		socialLinks: [{ icon: "github", link: "https://github.com/pawelblaszczyk5/moneytor" }],
 	},
 	title: "Moneytor",
-	vite: { server: { port: 4_205 } },
+	vite: { preview: { port: 3_205 }, server: { port: 4_205 } },
 });
