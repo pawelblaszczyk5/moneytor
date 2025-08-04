@@ -1,10 +1,19 @@
+import { Button } from "@moneytor/design-system/components/button";
+import { accessibility } from "@moneytor/design-system/styles/utilities";
+import { color } from "@moneytor/design-system/theme/color.stylex";
 import stylex from "@moneytor/stylex";
 
 import "#src/root.css";
 
-const styles = stylex.create({ test: { color: "green" } });
+const styles = stylex.create({ test: { backgroundColor: color.primary, color: "green" } });
 
-const App = () => <h1 {...stylex.props(styles.test)}>Hello world 🌍</h1>;
+const App = () => (
+	<div>
+		<h1 {...stylex.props(styles.test)}>Hello world 🌍</h1>
+		<span {...stylex.props(accessibility.srOnly)}>Not visible for most users</span>
+		<Button />
+	</div>
+);
 
 export const Root = () => (
 	<html lang="en">

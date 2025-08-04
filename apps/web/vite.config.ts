@@ -66,7 +66,7 @@ export default defineConfig((environment) => {
 				plugins: [
 					typedStylexPlugin({
 						babelConfig: { ...getBabelConfig(isDevelopment), babelrc: false },
-						include: ["./src/**/*.{js,jsx,ts,tsx}"],
+						include: ["./src/**/*.{js,jsx,ts,tsx}", "./node_modules/@moneytor/*/dist/src/**/*.{js,jsx}"],
 						useCSSLayers: true,
 					}),
 				],

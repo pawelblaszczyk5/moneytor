@@ -1,0 +1,44 @@
+{
+	"name": "@moneytor/design-system",
+	"description": "Everything related to shared UI concepts across the app. CSS reset, components, theming, styles",
+	"sideEffects": false,
+	"type": "module",
+	"imports": {
+		"#src/*": "./dist/src/*"
+	},
+	"exports": {
+		"./components/button": {
+			"default": "./dist/src/components/button.jsx",
+			"types": "./dist/src/components/button.d.ts"
+		},
+		"./reset": "./src/reset.css",
+		"./styles/utilities": {
+			"default": "./dist/src/styles/utilities.js",
+			"types": "./dist/src/styles/utilities.d.ts"
+		},
+		"./theme/color.stylex": {
+			"default": "./dist/src/theme/color.stylex.js",
+			"types": "./dist/src/theme/color.stylex.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "tsc --noCheck",
+		"dev": "tsc --noCheck",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"typecheck": "tsc --build --noEmit"
+	},
+	"dependencies": {
+		"@moneytor/stylex": "workspace:*",
+		"react": "catalog:",
+		"react-dom": "catalog:"
+	},
+	"devDependencies": {
+		"@moneytor/eslint-config": "workspace:*",
+		"@moneytor/typescript-config": "workspace:*",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"eslint": "catalog:",
+		"typescript": "catalog:"
+	}
+}

@@ -15,6 +15,7 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
+		"@moneytor/design-system": "workspace:*",
 		"@moneytor/stylex": "workspace:*",
 		"@vitejs/plugin-rsc": "catalog:",
 		"react": "catalog:",

@@ -4,19 +4,19 @@
 	"type": "module",
 	"exports": {
 		"./core": {
-			"import": "./core.js"
+			"default": "./core.js"
 		},
 		"./lingui": {
-			"import": "./lingui.js"
+			"default": "./lingui.js"
 		},
 		"./node": {
-			"import": "./node.js"
+			"default": "./node.js"
 		},
 		"./react": {
-			"import": "./react.js"
+			"default": "./react.js"
 		},
 		"./markdown": {
-			"import": "./markdown.js"
+			"default": "./markdown.js"
 		}
 	},
 	"dependencies": {
