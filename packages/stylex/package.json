@@ -1,0 +1,28 @@
+{
+	"name": "@moneytor/stylex",
+	"description": "Library with StyleX wrapper",
+	"sideEffects": false,
+	"type": "module",
+	"imports": {
+		"#src/*": "./dist/src/*"
+	},
+	"exports": {
+		".": "./dist/src/mod.js"
+	},
+	"scripts": {
+		"build": "tsc --noCheck",
+		"dev": "tsc --noCheck",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"typecheck": "tsc --build --noEmit"
+	},
+	"dependencies": {
+		"@stylexjs/stylex": "catalog:"
+	},
+	"devDependencies": {
+		"@moneytor/eslint-config": "workspace:*",
+		"@moneytor/typescript-config": "workspace:*",
+		"eslint": "catalog:",
+		"typescript": "catalog:"
+	}
+}
