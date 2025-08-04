@@ -8,7 +8,7 @@
 		"dev": "vitepress dev src",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"preview": "vitepress preview src",
+		"preview": "vitepress preview src --port 3205",
 		"typecheck": "tsc --build --noEmit"
 	},
 	"devDependencies": {
