@@ -15,14 +15,19 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
+		"@moneytor/stylex": "workspace:*",
 		"@vitejs/plugin-rsc": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:",
 		"rsc-html-stream": "^0.0.7"
 	},
 	"devDependencies": {
+		"@babel/plugin-syntax-jsx": "^7.27.1",
+		"@babel/preset-typescript": "^7.27.1",
 		"@moneytor/eslint-config": "workspace:*",
 		"@moneytor/typescript-config": "workspace:*",
+		"@stylexjs/babel-plugin": "catalog:",
+		"@stylexjs/postcss-plugin": "catalog:",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
