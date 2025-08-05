@@ -1,3 +1,3 @@
-@import url("@moneytor/design-system/reset") layer(reset);
+@import url("@moneytor/design-system/css-reset") layer(reset);
 
 @stylex;
