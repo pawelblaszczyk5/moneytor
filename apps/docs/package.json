@@ -15,7 +15,6 @@
 		"@moneytor/eslint-config": "workspace:*",
 		"@moneytor/typescript-config": "workspace:*",
 		"eslint": "catalog:",
-		"oxc-minify": "^0.82.1",
 		"vitepress": "2.0.0-alpha.12"
 	}
 }

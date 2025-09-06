@@ -11,16 +11,16 @@
 		"dev": "vite",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"preview": "vite preview",
+		"preview": "PORT=3200 node .output/server/index.mjs",
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
 		"@moneytor/design-system": "workspace:*",
 		"@moneytor/stylex": "workspace:*",
-		"@vitejs/plugin-rsc": "catalog:",
+		"@tanstack/react-router": "^1.131.33",
+		"@tanstack/react-start": "^1.131.33",
 		"react": "catalog:",
-		"react-dom": "catalog:",
-		"rsc-html-stream": "^0.0.7"
+		"react-dom": "catalog:"
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-jsx": "^7.27.1",
@@ -35,6 +35,7 @@
 		"@vitejs/plugin-react": "catalog:",
 		"babel-plugin-react-compiler": "catalog:",
 		"eslint": "catalog:",
+		"typescript": "catalog:",
 		"vite": "catalog:",
 		"vite-plugin-inspect": "catalog:"
 	}

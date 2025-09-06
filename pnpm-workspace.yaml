@@ -1,4 +1,4 @@
-# cspell:ignore esbuild, unrs, jotai, nuqs, xyflow
+# cspell:ignore esbuild, unrs
 packages:
   - apps/*
   - packages/*
@@ -19,9 +19,8 @@ catalog:
   "@stylexjs/babel-plugin": ^0.15.3
   "@stylexjs/postcss-plugin": ^0.15.3
   "@stylexjs/stylex": ^0.15.3
-  react: 0.0.0-experimental-de5a1b20-20250905
-  react-dom: 0.0.0-experimental-de5a1b20-20250905
-  "@vitejs/plugin-rsc": https://pkg.pr.new/vitejs/vite-plugin-react/@vitejs/plugin-rsc-experimental@49d4197
+  react: 19.2.0-canary-de5a1b20-20250905
+  react-dom: 19.2.0-canary-de5a1b20-20250905
 
 onlyBuiltDependencies:
   - esbuild
@@ -29,7 +28,8 @@ onlyBuiltDependencies:
 
 overrides:
   eslint-import-resolver-typescript>eslint-plugin-import: "-"
-  vite: "npm:rolldown-vite@latest"
+  react: "catalog:"
+  react-dom: "catalog:"
 
 engineStrict: true
 packageManagerStrictVersion: true

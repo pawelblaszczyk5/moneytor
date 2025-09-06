@@ -1,5 +1,3 @@
-"use client";
-
 import stylex from "@moneytor/stylex";
 
 import { color } from "#src/theme/color.stylex.js";

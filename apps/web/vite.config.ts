@@ -1,10 +1,7 @@
-import type { ViteReactPluginApi } from "@vitejs/plugin-react";
-import type { Plugin } from "vite";
-
 // @ts-expect-error - untyped module
 import stylexPlugin from "@stylexjs/postcss-plugin";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import react from "@vitejs/plugin-react";
-import rsc from "@vitejs/plugin-rsc";
 import { defineConfig } from "vite";
 import inspect from "vite-plugin-inspect";
 
@@ -34,51 +31,27 @@ const getBabelConfig = (isDevelopment: boolean) => ({
 	presets: ["@babel/preset-typescript"],
 });
 
-const disableReactCompilerInSsrContext = () =>
-	({
-		api: {
-			reactBabel: (babelConfig, context) => {
-				if (!context.ssr) {
-					return;
-				}
-
-				babelConfig.plugins = babelConfig.plugins.filter((plugin) => {
-					if (
-						plugin === "babel-plugin-react-compiler"
-						|| (Array.isArray(plugin) && plugin[0] === "babel-plugin-react-compiler")
-					) {
-						return false;
-					}
-
-					return true;
-				});
-			},
-		} satisfies ViteReactPluginApi,
-		name: "disable-react-compiler-in-ssr-context",
-	}) satisfies Plugin;
-
 export default defineConfig((environment) => {
 	const isDevelopment = environment.command === "serve";
 
 	return {
+		build: { assetsInlineLimit: 0 },
 		css: {
 			postcss: {
 				plugins: [
 					typedStylexPlugin({
 						babelConfig: { ...getBabelConfig(isDevelopment), babelrc: false },
-						include: ["./src/**/*.{js,jsx,ts,tsx}", "./node_modules/@moneytor/*/dist/src/**/*.{js,jsx}"],
+						include: ["./src/**/*.{js,jsx,ts,tsx}", "../../packages/*/dist/src/**/*.{js,jsx}"],
 						useCSSLayers: true,
 					}),
 				],
 			},
 		},
-		environments: {
-			client: { build: { rollupOptions: { input: { index: "./src/framework/entry.browser.tsx" } } } },
-			rsc: { build: { rollupOptions: { input: { index: "./src/framework/entry.rsc.tsx" } } } },
-			ssr: { build: { rollupOptions: { input: { index: "./src/framework/entry.ssr.tsx" } } } },
-		},
-		plugins: [rsc(), react({ babel: getBabelConfig(isDevelopment) }), disableReactCompilerInSsrContext(), inspect()],
-		preview: { port: 3_200 },
-		server: { port: 4_200 },
+		plugins: [
+			tanstackStart({ customViteReactPlugin: true, tsr: { addExtensions: true } }),
+			react({ babel: getBabelConfig(isDevelopment) }),
+			inspect(),
+		],
+		server: { host: true, port: 4_200, strictPort: true },
 	};
 });
