@@ -32,11 +32,7 @@ export default defineConfig({
 					{ link: "/development/intro", text: "Intro" },
 					{
 						collapsed: false,
-						items: [
-							{ link: "/development/adr/001-database", text: "1. Database" },
-							{ link: "/development/adr/002-frontend-framework", text: "2. Frontend framework" },
-							{ link: "/development/adr/003-backend-architecture", text: "3. Backend architecture" },
-						],
+						items: [{ link: "/development/adr/004-alternative-architecture", text: "4. Alternative architecture" }],
 						link: "/development/adr",
 						text: "ADR",
 					},

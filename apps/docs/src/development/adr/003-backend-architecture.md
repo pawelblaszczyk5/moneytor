@@ -4,7 +4,7 @@
 
 **Date:** `24.07.2025`
 
-**Status:** `accepted`
+**Status:** [`superseded by 4. Alternative architecture`](/development/adr/004-alternative-architecture)
 
 ## Context
 
