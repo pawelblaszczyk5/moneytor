@@ -9,7 +9,7 @@ import type { RscPayload } from "#src/framework/entry.rsc.js";
 
 export const renderHTML = async (
 	rscStream: ReadableStream<Uint8Array>,
-	options: { formState?: ReactFormState | undefined; nonce?: string },
+	options: { formState?: ReactFormState | undefined },
 ) => {
 	const [rscStream1, rscStream2] = rscStream.tee();
 
@@ -27,14 +27,10 @@ export const renderHTML = async (
 
 	const htmlStream = await renderToReadableStream(<SsrRoot />, {
 		bootstrapScriptContent,
-		// @ts-expect-error -- untyped field
-		formState: options.formState,
-		nonce: options.nonce,
+		formState: options.formState ?? null,
 	});
 
-	const responseStream = htmlStream.pipeThrough(
-		injectRSCPayload(rscStream2, { ...(options.nonce ? { nonce: options.nonce } : {}) }),
-	);
+	const responseStream = htmlStream.pipeThrough(injectRSCPayload(rscStream2));
 
 	return responseStream;
 };

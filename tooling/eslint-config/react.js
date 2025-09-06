@@ -130,13 +130,13 @@ export default tseslint.config(
 			"stylistic/jsx-self-closing-comp": ["error"],
 		},
 	},
+	reactHooks.configs["recommended-latest"],
 	{
-		name: "react-hooks",
-		plugins: { "react-hooks": reactHooks },
+		name: "react-hooks overrides",
 		rules: {
 			"react-hooks/exhaustive-deps": "error",
-			"react-hooks/rules-of-hooks": "error",
-			"react-hooks/react-compiler": "error",
+			// NOTE this is enabled, because otherwise it allows for silently skipping lint rules, I'm not 100% sure about this, but let it be this way for now
+			"react-hooks/todo": "error",
 		},
 	},
 	{
