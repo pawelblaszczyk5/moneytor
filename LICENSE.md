@@ -1,3 +1,5 @@
+Copyright © 2025 Paweł Błaszczyk
+
 # PolyForm Noncommercial License 1.0.0
 
 <https://polyformproject.org/licenses/noncommercial/1.0.0>
@@ -35,7 +37,7 @@ URL for them above, as well as copies of any plain-text lines
 beginning with `Required Notice:` that the licensor provided
 with the software. For example:
 
-> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
+> Required Notice: Copyright Paweł Błaszczyk (https://github.com/pawelblaszczyk5)
 
 ## Changes and New Works License
 
