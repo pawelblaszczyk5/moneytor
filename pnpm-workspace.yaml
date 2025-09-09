@@ -11,14 +11,14 @@ catalog:
   eslint: ^9.35.0
   babel-plugin-react-compiler: 19.1.0-rc.3
   typescript: ^5.9.2
-  vite: ^7.1.4
+  vite: ^7.1.5
   vite-plugin-inspect: ^11.3.3
   "@vitejs/plugin-react": ^5.0.2
   "@types/react": ^19.1.12
   "@types/react-dom": ^19.1.9
-  "@stylexjs/babel-plugin": ^0.15.3
-  "@stylexjs/postcss-plugin": ^0.15.3
-  "@stylexjs/stylex": ^0.15.3
+  "@stylexjs/babel-plugin": ^0.15.4
+  "@stylexjs/postcss-plugin": ^0.15.4
+  "@stylexjs/stylex": ^0.15.4
   react: 19.2.0-canary-de5a1b20-20250905
   react-dom: 19.2.0-canary-de5a1b20-20250905
 
