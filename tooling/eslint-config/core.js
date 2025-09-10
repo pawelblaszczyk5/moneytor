@@ -119,6 +119,7 @@ export default tseslint.config(
 			"prefer-rest-params": "error",
 			"prefer-spread": "error",
 			"prefer-template": "error",
+			"preserve-caught-error": ["error", { requireCatchParameter: true }],
 			"quote-props": ["error", "as-needed", { numbers: true }],
 			radix: "error",
 			"require-atomic-updates": "error",
