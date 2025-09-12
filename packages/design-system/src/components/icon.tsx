@@ -1,8 +1,9 @@
-import type { SVGProps } from "react";
-
 import { createContext, use } from "react";
 
+import type { StyleXStyles } from "@moneytor/stylex";
+
 import { assert } from "@moneytor/assert";
+import stylex from "@moneytor/stylex";
 
 export type IconName = "webhook";
 
@@ -11,13 +12,13 @@ export const IconSpritesheetContext = createContext<null | string>(null);
 
 IconSpritesheetContext.displayName = "IconSpritesheetContext";
 
-export const Icon = ({ height, name, width, ...props }: Readonly<SVGProps<SVGSVGElement> & { name: IconName }>) => {
+export const Icon = ({ name, style }: Readonly<{ name: IconName; style?: StyleXStyles | undefined }>) => {
 	const spritesheet = use(IconSpritesheetContext);
 
 	assert(spritesheet, "IconSpritesheetContext must be provided globally");
 
 	return (
-		<svg height={height ?? 20} width={width ?? 20} aria-hidden {...props}>
+		<svg height={20} width={20} aria-hidden {...stylex.props(style)}>
 			<use href={`${spritesheet}#${name}`} />
 		</svg>
 	);

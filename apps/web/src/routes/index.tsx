@@ -5,14 +5,15 @@ import { Icon } from "@moneytor/design-system/components/icon";
 import stylex from "@moneytor/stylex";
 
 const styles = stylex.create({
-	heading: { alignItems: "center", color: "rebeccapurple", display: "flex", gap: 4, marginBlock: 8 },
+	heading: { alignItems: "center", color: "rebeccapurple", display: "flex", fontSize: 14, gap: 4, marginBlock: 8 },
+	icon: { height: 16, width: 16 },
 });
 
 const Home = () => (
 	<>
 		<title>Home | Moneytor</title>
 		<h1 {...stylex.props(styles.heading)}>
-			Hello world <Icon name="webhook" />
+			Hello world <Icon name="webhook" style={styles.icon} />
 		</h1>
 		<Button />
 	</>
