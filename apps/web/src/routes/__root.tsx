@@ -8,7 +8,7 @@ const RootDocument = ({ children }: Readonly<{ children: ReactNode }>) => (
 	<html lang="en-US">
 		<head>
 			<meta charSet="utf-8" />
-			<link href="/vite.svg" rel="icon" type="image/svg+xml" />
+			<link href="/moneytor.svg" rel="icon" type="image/svg+xml" />
 			<link href={stylesheetHref} rel="stylesheet" />
 			<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 		</head>
