@@ -2,21 +2,26 @@ import type { ReactNode } from "react";
 
 import { createRootRoute, Outlet, Scripts } from "@tanstack/react-router";
 
+import { IconSpritesheetContext } from "@moneytor/design-system/components/icon";
+import iconsSpritesheet from "@moneytor/design-system/icons-spritesheet.svg";
+
 import stylesheetHref from "#src/styles.css?url";
 
 const RootDocument = ({ children }: Readonly<{ children: ReactNode }>) => (
-	<html lang="en-US">
-		<head>
-			<meta charSet="utf-8" />
-			<link href="/moneytor.svg" rel="icon" type="image/svg+xml" />
-			<link href={stylesheetHref} rel="stylesheet" />
-			<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-		</head>
-		<body>
-			{children}
-			<Scripts />
-		</body>
-	</html>
+	<IconSpritesheetContext value={iconsSpritesheet}>
+		<html lang="en-US">
+			<head>
+				<meta charSet="utf-8" />
+				<link href="/moneytor.svg" rel="icon" type="image/svg+xml" />
+				<link href={stylesheetHref} rel="stylesheet" />
+				<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+			</head>
+			<body>
+				{children}
+				<Scripts />
+			</body>
+		</html>
+	</IconSpritesheetContext>
 );
 
 const RootComponent = () => (

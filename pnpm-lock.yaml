@@ -176,6 +176,9 @@ importers:
 
   packages/design-system:
     dependencies:
+      '@moneytor/assert':
+        specifier: workspace:*
+        version: link:../assert
       '@moneytor/stylex':
         specifier: workspace:*
         version: link:../stylex

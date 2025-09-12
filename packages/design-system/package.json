@@ -8,9 +8,10 @@
 	},
 	"exports": {
 		"./reset.css": "./src/reset.css",
-		"./components/button": {
-			"default": "./dist/src/components/button.jsx",
-			"types": "./dist/src/components/button.d.ts"
+		"./icons-spritesheet.svg": "./src/icons-spritesheet.svg",
+		"./components/*": {
+			"default": "./dist/src/components/*.jsx",
+			"types": "./dist/src/components/*.d.ts"
 		},
 		"./styles/utilities": {
 			"default": "./dist/src/styles/utilities.js",
@@ -29,6 +30,7 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
+		"@moneytor/assert": "workspace:*",
 		"@moneytor/stylex": "workspace:*",
 		"react": "catalog:",
 		"react-dom": "catalog:"
