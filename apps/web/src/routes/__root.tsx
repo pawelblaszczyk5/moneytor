@@ -6,7 +6,7 @@ import fontItalicLatinUrl from "@fontsource-variable/ibm-plex-sans/files/ibm-ple
 import fontStandardLatinExtendedUrl from "@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-ext-wght-normal.woff2";
 import fontItalicLatinExtendedUrl from "@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-italic.woff2";
 import fontStandardLatinUrl from "@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-normal.woff2";
-import { createRootRoute, Outlet, Scripts } from "@tanstack/react-router";
+import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
 import { preload } from "react-dom";
 
 import { IconSpritesheetContext } from "@moneytor/design-system/components/icon";
@@ -28,6 +28,7 @@ const RootDocument = ({ children }: Readonly<{ children: ReactNode }>) => {
 					<link href="/moneytor.svg" rel="icon" type="image/svg+xml" />
 					<link href={stylesheetHref} rel="stylesheet" />
 					<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+					<HeadContent />
 				</head>
 				<body>
 					{children}
