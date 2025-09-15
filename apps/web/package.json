@@ -17,8 +17,8 @@
 	"dependencies": {
 		"@moneytor/design-system": "workspace:*",
 		"@moneytor/stylex": "workspace:*",
-		"@tanstack/react-router": "^1.131.40",
-		"@tanstack/react-start": "^1.131.40",
+		"@tanstack/react-router": "^1.131.44",
+		"@tanstack/react-start": "^1.131.44",
 		"react": "catalog:",
 		"react-dom": "catalog:"
 	},
