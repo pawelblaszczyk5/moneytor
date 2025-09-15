@@ -2,6 +2,7 @@
 import stylexPlugin from "@stylexjs/postcss-plugin";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import react from "@vitejs/plugin-react";
+import { FontaineTransform } from "fontaine";
 import { defineConfig } from "vite";
 import inspect from "vite-plugin-inspect";
 
@@ -51,6 +52,7 @@ export default defineConfig((environment) => {
 			tanstackStart({ customViteReactPlugin: true, tsr: { addExtensions: true } }),
 			react({ babel: getBabelConfig(isDevelopment) }),
 			inspect(),
+			FontaineTransform.vite({ fallbacks: ["Arial"] }),
 		],
 		server: { host: true, port: 4_200, strictPort: true },
 	};

@@ -18,5 +18,5 @@
 		"vitejs"
 	],
 	"enableGlobDot": true,
-	"ignoreWords": ["pawelblaszczyk", "predev", "taze", "tseslint"]
+	"ignoreWords": ["fontaine", "pawelblaszczyk", "predev", "taze", "tseslint"]
 }
