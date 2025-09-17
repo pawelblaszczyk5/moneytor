@@ -19,8 +19,8 @@ catalog:
   "@stylexjs/babel-plugin": ^0.15.4
   "@stylexjs/postcss-plugin": ^0.15.4
   "@stylexjs/stylex": ^0.15.4
-  react: 19.2.0-canary-de5a1b20-20250905
-  react-dom: 19.2.0-canary-de5a1b20-20250905
+  react: 19.2.0-canary-128abcfa-20250917
+  react-dom: 19.2.0-canary-128abcfa-20250917
 
 onlyBuiltDependencies:
   - "@parcel/watcher"
@@ -31,6 +31,7 @@ overrides:
   eslint-import-resolver-typescript>eslint-plugin-import: "-"
   react: "catalog:"
   react-dom: "catalog:"
+  vite: npm:rolldown-vite@latest
 
 engineStrict: true
 packageManagerStrictVersion: true
