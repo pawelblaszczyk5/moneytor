@@ -1,9 +1,9 @@
 import n from "eslint-plugin-n";
+import { defineConfig } from "eslint/config";
 
-import tseslint from "typescript-eslint";
-
-export default tseslint.config(n.configs["flat/recommended"], {
-	name: "n overrides",
+export default defineConfig({
+	name: "moneytor/node",
+	extends: [n.configs["flat/recommended"]],
 	rules: {
 		"n/no-missing-import": "off",
 		"n/no-unpublished-import": "off",

@@ -1,9 +1,10 @@
-import tseslint from "typescript-eslint";
 import markdown from "@eslint/markdown";
+import { defineConfig } from "eslint/config";
 
-export default tseslint.config(markdown.configs.recommended, {
+export default defineConfig({
+	name: "moneytor/markdown",
+	files: ["**/*.md"],
+	extends: [markdown.configs.recommended],
 	language: "markdown/gfm",
-	languageOptions: { frontmatter: "yaml" },
-	name: "markdown overrides",
 	rules: { "markdown/no-bare-urls": "error", "markdown/no-duplicate-headings": "error", "markdown/no-html": "error" },
 });
