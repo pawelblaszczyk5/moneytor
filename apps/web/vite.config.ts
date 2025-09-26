@@ -49,7 +49,7 @@ export default defineConfig((environment) => {
 			},
 		},
 		plugins: [
-			tanstackStart({ customViteReactPlugin: true, tsr: { addExtensions: true } }),
+			tanstackStart({ router: { addExtensions: true } }),
 			react({ babel: getBabelConfig(isDevelopment) }),
 			inspect(),
 			FontaineTransform.vite({ fallbacks: ["Arial"] }),

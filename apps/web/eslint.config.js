@@ -12,5 +12,5 @@ export default defineConfig(
 		files: ["src/routes/**"],
 		rules: { "canonical/filename-no-index": "off", "@typescript-eslint/no-use-before-define": "off" },
 	},
-	{ ignores: ["src/routeTree.gen.ts"] },
+	{ ignores: ["src/routeTree.gen.ts", "server.ts"] },
 );

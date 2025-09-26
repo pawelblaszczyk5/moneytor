@@ -11,16 +11,17 @@
 		"dev": "vite",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"preview": "PORT=3200 node .output/server/index.mjs",
+		"preview": "node server.ts",
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
 		"@moneytor/design-system": "workspace:*",
 		"@moneytor/stylex": "workspace:*",
-		"@tanstack/react-router": "^1.131.44",
-		"@tanstack/react-start": "^1.131.44",
+		"@tanstack/react-router": "^1.132.7",
+		"@tanstack/react-start": "^1.132.9",
 		"react": "catalog:",
-		"react-dom": "catalog:"
+		"react-dom": "catalog:",
+		"srvx": "^0.8.7"
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-jsx": "^7.27.1",

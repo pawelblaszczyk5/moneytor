@@ -1,0 +1,13 @@
+diff --git a/dist/esm/index.d.ts b/dist/esm/index.d.ts
+index 14d959b379fe62328cfc0f4b877ad2d6a7384e30..51ee56a7dadc72e102f91b1a3e4694c62f954418 100644
+--- a/dist/esm/index.d.ts
++++ b/dist/esm/index.d.ts
+@@ -10,7 +10,7 @@ export { TSS_FORMDATA_CONTEXT, TSS_SERVER_FUNCTION, X_TSS_SERIALIZED, } from './
+ export type * from './serverRoute.js';
+ export type * from './startEntry.js';
+ export { createStart } from './createStart.js';
+-export type { AnyStartInstance, AnyStartInstanceOptions } from './createStart.js';
++export type { AnyStartInstance, AnyStartInstanceOptions, StartInstance } from './createStart.js';
+ export type { Register } from '@tanstack/router-core';
+ export { getRouterInstance } from './getRouterInstance.js';
+ export { getDefaultSerovalPlugins } from './getDefaultSerovalPlugins.js';
