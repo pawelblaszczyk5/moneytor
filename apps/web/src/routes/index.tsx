@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { Button } from "@moneytor/design-system/components/button";
-import { Icon } from "@moneytor/design-system/components/icon";
-import stylex from "@moneytor/stylex";
+import { Button } from "@trinse/design-system/components/button";
+import { Icon } from "@trinse/design-system/components/icon";
+import stylex from "@trinse/stylex";
 
 const styles = stylex.create({
 	heading: { alignItems: "center", color: "rebeccapurple", display: "flex", fontSize: 14, gap: 4, marginBlock: 8 },
@@ -11,7 +11,7 @@ const styles = stylex.create({
 
 const Home = () => (
 	<>
-		<title>Home | Moneytor</title>
+		<title>Home | Trinse</title>
 		<h1 {...stylex.props(styles.heading)}>
 			Hello world <Icon name="webhook" style={styles.icon} />
 		</h1>

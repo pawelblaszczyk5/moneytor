@@ -1,1 +1,1 @@
-# @moneytor/docs
+# @trinse/docs

@@ -2,7 +2,7 @@ import lingui from "eslint-plugin-lingui";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig({
-	name: "moneytor/lingui",
+	name: "trinse/lingui",
 	plugins: { lingui },
 	files: ["**/*.{ts,tsx,js,jsx}"],
 	rules: {

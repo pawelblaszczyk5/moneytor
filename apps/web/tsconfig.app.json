@@ -1,5 +1,5 @@
 {
-	"extends": "@moneytor/typescript-config/dom-no-build",
+	"extends": "@trinse/typescript-config/dom-no-build",
 	"compilerOptions": { "jsx": "react-jsx", "types": ["node", "vite/client"] },
 	"include": ["src"]
 }

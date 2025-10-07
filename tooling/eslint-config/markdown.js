@@ -2,7 +2,7 @@ import markdown from "@eslint/markdown";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig({
-	name: "moneytor/markdown",
+	name: "trinse/markdown",
 	files: ["**/*.md"],
 	extends: [markdown.configs.recommended],
 	language: "markdown/gfm",

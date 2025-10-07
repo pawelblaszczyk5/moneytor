@@ -1,9 +1,9 @@
 import { createContext, use } from "react";
 
-import type { StyleXStyles } from "@moneytor/stylex";
+import type { StyleXStyles } from "@trinse/stylex";
 
-import { assert } from "@moneytor/assert";
-import stylex from "@moneytor/stylex";
+import { assert } from "@trinse/assert";
+import stylex from "@trinse/stylex";
 
 export type IconName = "webhook";
 

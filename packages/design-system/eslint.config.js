@@ -1,7 +1,7 @@
 import { defineConfig } from "eslint/config";
 
-import core from "@moneytor/eslint-config/core";
-import react from "@moneytor/eslint-config/react";
+import core from "@trinse/eslint-config/core";
+import react from "@trinse/eslint-config/react";
 
 export default defineConfig({
 	languageOptions: { parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname } },

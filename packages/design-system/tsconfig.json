@@ -1,5 +1,5 @@
 {
-	"extends": "@moneytor/typescript-config/dom-build",
+	"extends": "@trinse/typescript-config/dom-build",
 	"compilerOptions": { "jsx": "preserve", "types": ["react/experimental", "react-dom/experimental"] },
 	"include": ["src"]
 }

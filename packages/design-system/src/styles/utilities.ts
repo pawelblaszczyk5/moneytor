@@ -1,4 +1,4 @@
-import stylex from "@moneytor/stylex";
+import stylex from "@trinse/stylex";
 
 export const accessibility = stylex.create({
 	srOnly: {

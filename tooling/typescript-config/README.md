@@ -1,1 +1,1 @@
-# @moneytor/typescript-config
+# @trinse/typescript-config

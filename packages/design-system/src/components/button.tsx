@@ -1,4 +1,4 @@
-import stylex from "@moneytor/stylex";
+import stylex from "@trinse/stylex";
 
 import { color } from "#src/theme/color.stylex.js";
 

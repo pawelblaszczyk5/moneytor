@@ -12,7 +12,7 @@ import { defineConfig } from "eslint/config";
 // cspell:ignore innerhtml, textnodes, setstate
 
 export default defineConfig({
-	name: "moneytor/react",
+	name: "trinse/react",
 	plugins: {
 		react: react,
 		"react-dom": reactDom,

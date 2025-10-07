@@ -1,5 +1,5 @@
 {
-	"name": "@moneytor/web",
+	"name": "@trinse/web",
 	"description": "Web app",
 	"sideEffects": false,
 	"type": "module",
@@ -15,10 +15,10 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
-		"@moneytor/design-system": "workspace:*",
-		"@moneytor/stylex": "workspace:*",
 		"@tanstack/react-router": "^1.132.31",
 		"@tanstack/react-start": "^1.132.31",
+		"@trinse/design-system": "workspace:*",
+		"@trinse/stylex": "workspace:*",
 		"react": "catalog:",
 		"react-dom": "catalog:",
 		"srvx": "^0.8.9"
@@ -27,10 +27,10 @@
 		"@babel/plugin-syntax-jsx": "^7.27.1",
 		"@babel/preset-typescript": "^7.27.1",
 		"@fontsource-variable/ibm-plex-sans": "^5.2.8",
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
 		"@stylexjs/babel-plugin": "catalog:",
 		"@stylexjs/postcss-plugin": "catalog:",
+		"@trinse/eslint-config": "workspace:*",
+		"@trinse/typescript-config": "workspace:*",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",

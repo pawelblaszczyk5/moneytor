@@ -1,6 +1,6 @@
 /* cspell:ignore fontsource, wght */
 
-@import url("@moneytor/design-system/reset.css") layer(reset);
+@import url("@trinse/design-system/reset.css") layer(reset);
 
 @layer base {
 	@font-face {

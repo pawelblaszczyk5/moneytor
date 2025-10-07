@@ -1,6 +1,6 @@
-# What's Moneytor?
+# What's Trinse?
 
-Moneytor is an application to track, observe and plan your finances. Created to strike the balance between ease of usage and advanced functionalities providing as much value as possible.
+Trinse is an application to track, observe and plan your finances. Created to strike the balance between ease of usage and advanced functionalities providing as much value as possible.
 
 From tracking your everyday expenses and incomes, through advanced capabilities of searching, filtering and browsing all your history. Create dashboards based on all the data you collected. Learn how you spend money and have knowledge that makes smart decisions possible. Commit to these decisions by budget planning possibilities in the system.
 

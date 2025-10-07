@@ -1,1 +1,1 @@
-# @moneytor/eslint-config
+# @trinse/eslint-config

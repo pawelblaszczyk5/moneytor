@@ -1,5 +1,5 @@
 {
-	"name": "@moneytor/stylex",
+	"name": "@trinse/stylex",
 	"description": "Library with StyleX wrapper",
 	"sideEffects": false,
 	"type": "module",
@@ -23,8 +23,8 @@
 		"@stylexjs/stylex": "catalog:"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@trinse/eslint-config": "workspace:*",
+		"@trinse/typescript-config": "workspace:*",
 		"eslint": "catalog:",
 		"typescript": "catalog:"
 	}

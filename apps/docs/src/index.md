@@ -2,13 +2,13 @@
 layout: home
 
 hero:
-  name: "Moneytor"
+  name: "Trinse"
   text: "Project documentation"
   tagline: Finance tracking for tomorrow day!
   actions:
     - theme: brand
       text: General
-      link: /general/whats-moneytor
+      link: /general/whats-trinse
     - theme: alt
       text: Development
       link: /development/intro

@@ -2,7 +2,7 @@ import n from "eslint-plugin-n";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig({
-	name: "moneytor/node",
+	name: "trinse/node",
 	extends: [n.configs["flat/recommended"]],
 	rules: {
 		"n/no-missing-import": "off",

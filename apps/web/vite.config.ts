@@ -23,7 +23,7 @@ const getBabelConfig = (isDevelopment: boolean) => ({
 			{
 				dev: isDevelopment,
 				enableMediaQueryOrder: true,
-				importSources: ["@moneytor/stylex"],
+				importSources: ["@trinse/stylex"],
 				treeshakeCompensation: true,
 				unstable_moduleResolution: { type: "commonJS" },
 			},

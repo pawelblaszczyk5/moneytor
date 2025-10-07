@@ -14,7 +14,7 @@
 	],
 	"dictionaries": ["lorem-ipsum"],
 	"useGitignore": true,
-	"words": ["codeowner", "moneytor", "spritesheet", "typecheck"],
+	"words": ["codeowner", "trinse", "spritesheet", "typecheck"],
 	"enableGlobDot": true,
 	"ignoreWords": [
 		"fontaine",

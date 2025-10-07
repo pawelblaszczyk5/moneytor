@@ -1,1 +1,1 @@
-{ "extends": "@moneytor/typescript-config/node-build", "include": ["src"] }
+{ "extends": "@trinse/typescript-config/node-build", "include": ["src"] }

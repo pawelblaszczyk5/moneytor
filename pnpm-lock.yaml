@@ -84,10 +84,10 @@ importers:
 
   apps/docs:
     devDependencies:
-      '@moneytor/eslint-config':
+      '@trinse/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@moneytor/typescript-config':
+      '@trinse/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/typescript-config
       eslint:
@@ -102,10 +102,10 @@ importers:
 
   apps/web:
     dependencies:
-      '@moneytor/design-system':
+      '@trinse/design-system':
         specifier: workspace:*
         version: link:../../packages/design-system
-      '@moneytor/stylex':
+      '@trinse/stylex':
         specifier: workspace:*
         version: link:../../packages/stylex
       '@tanstack/react-router':
@@ -133,10 +133,10 @@ importers:
       '@fontsource-variable/ibm-plex-sans':
         specifier: ^5.2.8
         version: 5.2.8
-      '@moneytor/eslint-config':
+      '@trinse/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@moneytor/typescript-config':
+      '@trinse/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/typescript-config
       '@stylexjs/babel-plugin':
@@ -178,10 +178,10 @@ importers:
 
   packages/assert:
     devDependencies:
-      '@moneytor/eslint-config':
+      '@trinse/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@moneytor/typescript-config':
+      '@trinse/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/typescript-config
       eslint:
@@ -193,10 +193,10 @@ importers:
 
   packages/design-system:
     dependencies:
-      '@moneytor/assert':
+      '@trinse/assert':
         specifier: workspace:*
         version: link:../assert
-      '@moneytor/stylex':
+      '@trinse/stylex':
         specifier: workspace:*
         version: link:../stylex
       react:
@@ -206,10 +206,10 @@ importers:
         specifier: ^19.2.0
         version: 19.2.0(react@19.2.0)
     devDependencies:
-      '@moneytor/eslint-config':
+      '@trinse/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@moneytor/typescript-config':
+      '@trinse/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/typescript-config
       '@types/react':
@@ -231,10 +231,10 @@ importers:
         specifier: 'catalog:'
         version: 0.16.0
     devDependencies:
-      '@moneytor/eslint-config':
+      '@trinse/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@moneytor/typescript-config':
+      '@trinse/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/typescript-config
       eslint:

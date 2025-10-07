@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint/config";
 
-import core from "@moneytor/eslint-config/core";
+import core from "@trinse/eslint-config/core";
 
 export default defineConfig(
 	{

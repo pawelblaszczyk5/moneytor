@@ -56,7 +56,7 @@ const banExtension = (extension) => {
 
 export default defineConfig({
 	files: ["**/*.{ts,tsx,js,jsx}"],
-	name: "moneytor/core",
+	name: "trinse/core",
 	linterOptions: { reportUnusedDisableDirectives: "error", reportUnusedInlineConfigs: "error" },
 	ignores: ["eslint.config.js"],
 	plugins: {
@@ -290,7 +290,7 @@ export default defineConfig({
 				internalPattern: ["#.*"],
 				order: "asc",
 				type: "natural",
-				customGroups: { value: { monorepo: ["@moneytor/.*"] }, type: { "monorepo-type": ["@moneytor/.*"] } },
+				customGroups: { value: { monorepo: ["@trinse/.*"] }, type: { "monorepo-type": ["@trinse/.*"] } },
 			},
 		],
 		"perfectionist/sort-jsx-props": [

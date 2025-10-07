@@ -1,5 +1,5 @@
 {
-	"name": "@moneytor/assert",
+	"name": "@trinse/assert",
 	"description": "Tiny assert utility",
 	"sideEffects": false,
 	"type": "module",
@@ -20,8 +20,8 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@trinse/eslint-config": "workspace:*",
+		"@trinse/typescript-config": "workspace:*",
 		"eslint": "catalog:",
 		"typescript": "catalog:"
 	}

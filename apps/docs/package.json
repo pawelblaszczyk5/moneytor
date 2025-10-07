@@ -1,5 +1,5 @@
 {
-	"name": "@moneytor/docs",
+	"name": "@trinse/docs",
 	"description": "Documentation",
 	"sideEffects": false,
 	"type": "module",
@@ -12,8 +12,8 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@trinse/eslint-config": "workspace:*",
+		"@trinse/typescript-config": "workspace:*",
 		"eslint": "catalog:",
 		"oxc-minify": "^0.93.0",
 		"vitepress": "2.0.0-alpha.12"

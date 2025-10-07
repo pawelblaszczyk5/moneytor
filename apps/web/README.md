@@ -1,1 +1,1 @@
-# @moneytor/web
+# @trinse/web

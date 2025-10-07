@@ -1,7 +1,7 @@
 import { defineConfig } from "eslint/config";
 
-import core from "@moneytor/eslint-config/core";
-import markdown from "@moneytor/eslint-config/markdown";
+import core from "@trinse/eslint-config/core";
+import markdown from "@trinse/eslint-config/markdown";
 
 export default defineConfig(
 	{
