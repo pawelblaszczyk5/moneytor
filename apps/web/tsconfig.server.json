@@ -1,0 +1,5 @@
+{
+	"extends": "@trinse/typescript-config/node-no-build",
+	"compilerOptions": { "types": ["node"], "checkJs": false },
+	"include": ["server.ts", "dist/server/server.js"]
+}

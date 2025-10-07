@@ -15,13 +15,14 @@
 		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
+		"@hono/node-server": "^1.19.5",
 		"@tanstack/react-router": "^1.132.47",
 		"@tanstack/react-start": "^1.132.48",
 		"@trinse/design-system": "workspace:*",
 		"@trinse/stylex": "workspace:*",
+		"hono": "^4.9.10",
 		"react": "catalog:",
-		"react-dom": "catalog:",
-		"srvx": "^0.8.13"
+		"react-dom": "catalog:"
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-jsx": "^7.27.1",
