@@ -1,7 +1,6 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import canonical from "eslint-plugin-canonical";
-import eslintComments from "eslint-plugin-eslint-comments";
 import preferArrowFunctions from "eslint-plugin-prefer-arrow-functions";
 import fp from "eslint-plugin-fp";
 import importX from "eslint-plugin-import-x";
@@ -299,7 +298,6 @@ export default defineConfig({
 		],
 
 		// no-secrets
-
 		"no-secrets/no-secrets": ["error", { tolerance: 4.25 }],
 	},
 });

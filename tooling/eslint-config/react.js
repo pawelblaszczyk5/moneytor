@@ -114,24 +114,7 @@ export default defineConfig({
 		"stylistic/jsx-self-closing-comp": ["error"],
 
 		// react-hooks
-		// NOTE Migrate this to extending built-in config after this https://github.com/facebook/react/pull/34675
-		"react-hooks/component-hook-factories": "error",
-		"react-hooks/config": "error",
-		"react-hooks/error-boundaries": "error",
 		"react-hooks/exhaustive-deps": "error",
-		"react-hooks/gating": "error",
-		"react-hooks/globals": "error",
-		"react-hooks/immutability": "error",
-		"react-hooks/incompatible-library": "error",
-		"react-hooks/preserve-manual-memoization": "error",
-		"react-hooks/purity": "error",
-		"react-hooks/refs": "error",
-		"react-hooks/rules-of-hooks": "error",
-		"react-hooks/set-state-in-effect": "error",
-		"react-hooks/set-state-in-render": "error",
-		"react-hooks/static-components": "error",
-		"react-hooks/unsupported-syntax": "error",
-		"react-hooks/use-memo": "error",
 		// NOTE this is enabled, because otherwise it allows for silently skipping lint rules, I'm not 100% sure about this, but let it be this way for now
 		"react-hooks/todo": "error",
 
