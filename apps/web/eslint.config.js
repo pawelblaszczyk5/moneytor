@@ -7,7 +7,7 @@ import node from "@trinse/eslint-config/node";
 export default defineConfig(
 	{
 		extends: [core, react, node],
-		ignores: ["src/routeTree.gen.ts"],
+		ignores: ["src/routeTree.gen.ts", "server.ts"],
 		languageOptions: { parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname } },
 	},
 	{ files: ["vite.config.ts"], rules: { "import-x/no-default-export": "off" } },

@@ -3,7 +3,6 @@ import { serveStatic } from "@hono/node-server/serve-static";
 import { Hono } from "hono";
 import { createMiddleware } from "hono/factory";
 
-// eslint-disable-next-line @typescript-eslint/no-restricted-imports -- that one is fine
 import handler from "./dist/server/server.js";
 
 const ONE_YEAR_IN_SECONDS = 60 * 60 * 24 * 365;
