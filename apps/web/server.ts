@@ -23,7 +23,6 @@ const app = new Hono();
 
 app.use("/assets/*", cache({ immutable: true, seconds: ONE_YEAR_IN_SECONDS }), serveStatic({ root: "./dist/client" }));
 app.use("*", cache({ immutable: false, seconds: ONE_HOUR_IN_SECONDS }), serveStatic({ root: "./dist/client" }));
-
 app.use("*", async (ctx) => handler.fetch(ctx.req.raw) as Promise<Response>);
 
 serve({ fetch: app.fetch, port: 3_200 });
