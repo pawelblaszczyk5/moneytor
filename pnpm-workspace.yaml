@@ -7,7 +7,7 @@ packages:
 allowUnusedPatches: false
 
 catalog:
-  "@types/node": ^24.7.0
+  "@types/node": ^24.7.1
   eslint: ^9.37.0
   babel-plugin-react-compiler: 19.1.0-rc.3
   typescript: ^5.9.3
