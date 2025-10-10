@@ -23,7 +23,7 @@ export default defineConfig({
 		stylistic: stylistic,
 		"react-hooks": reactHooks,
 	},
-	extends: [reactHooks.configs["recommended-latest"], jsxA11y.flatConfigs.strict],
+	extends: [reactHooks.configs.flat["recommended-latest"], jsxA11y.flatConfigs.strict],
 	rules: {
 		// react
 		"react/jsx-key-before-spread": "error",
